@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tugas Praktikum JS</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <center>
+      <div class="container">
+        <h3>Pendaftaran Peminatan</h3>
+        
+        <p id="tanggal" style="font-size: 14px; color: #666666; font-style: italic;"></p>
+        
+        <form>
+          <label for="nama">Nama</label><br />
+          <input type="text" placeholder="Nama anda" id="nama" /><br /><br />
+
+          <label for="nim">NIM</label><br />
+          <input type="text" placeholder="NIM anda" id="nim" /><br /><br />
+
+          <label for="angkatan">Angkatan</label><br />
+          <select id="angkatan">
+            <option value="">-- Pilih Angkatan --</option>
+            <option value="2021">2021</option>
+            <option value="2022">2022</option>
+            <option value="2023">2023</option>
+          </select><br /><br />
+
+          <p>Peminatan pada bidang:</p>
+          <input type="radio" name="peminatan" id="prog" value="Programming" />
+          <label for="prog">Programming</label> <br />
+          
+          <input type="radio" name="peminatan" id="des" value="Desain" />
+          <label for="des">Desain</label><br />
+          
+          <input type="radio" name="peminatan" id="jar" value="Jaringan" />
+          <label for="jar">Jaringan</label><br />
+          
+          <input type="radio" name="peminatan" id="dat" value="Data" />
+          <label for="dat">Data</label><br /><br />
+
+          <label for="tanggalInput">Tanggal Pendaftaran</label><br />
+          <input type="date" id="tanggalInput" /><br /><br />
+
+          <label for="alamat">Alamat</label><br />
+          <textarea placeholder="Tulis alamatmu di sini" id="alamat" cols="30" rows="5"></textarea><br /><br />
+
+          <button type="button" class="btn-primary" onclick="tampil()">Submit</button>
+          <br><br>
+        </form>
+      </div>
+    </center>
+    
+    <script src="java.js"></script>
+  </body>
+</html>
